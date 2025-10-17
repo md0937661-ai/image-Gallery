@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">My Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="btn active" data-filter="all">All</button>
+    <button class="btn" data-filter="nature">Nature</button>
+    <button class="btn" data-filter="animals">Animals</button>
+    <button class="btn" data-filter="architecture">Architecture</button>
+  </div>
+
+  <!-- Gallery Container -->
+  <div class="gallery">
+    <div class="image-card" data-category="nature">
+      <img src="https://picsum.photos/id/1018/400/300" alt="Nature 1">
+    </div>
+    <div class="image-card" data-category="animals">
+      <img src="https://picsum.photos/id/1024/400/300" alt="Animal 1">
+    </div>
+    <div class="image-card" data-category="architecture">
+      <img src="https://picsum.photos/id/1031/400/300" alt="Architecture 1">
+    </div>
+    <div class="image-card" data-category="nature">
+      <img src="https://picsum.photos/id/1043/400/300" alt="Nature 2">
+    </div>
+    <div class="image-card" data-category="animals">
+      <img src="https://picsum.photos/id/1062/400/300" alt="Animal 2">
+    </div>
+    <div class="image-card" data-category="architecture">
+      <img src="https://picsum.photos/id/1069/400/300" alt="Architecture 2">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="navigation">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
